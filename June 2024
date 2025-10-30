@@ -1,0 +1,78 @@
+<style>
+  .post {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 24px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .post:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  }
+  .date {
+    font-size: 0.9em;
+    color: #777;
+    margin-bottom: 12px;
+  }
+  h2 {
+    color: #1f3a93;
+    margin-bottom: 10px;
+  }
+  pre {
+    background: #f6f8fa;
+    border-radius: 8px;
+    padding: 16px;
+    overflow-x: auto;
+  }
+  code {
+    font-family: 'Fira Code', monospace;
+    color: #333;
+  }
+  p {
+    line-height: 1.7;
+    color: #444;
+  }
+</style>
+
+<div class="post">
+  <h2>June 2024 — Teaching Code in Brownsville, NY</h2>
+  <div class="date">2024-06-15</div>
+  <p>
+    The very first chapter of <strong>PlotLyft</strong> began far from any computer lab — in a vibrant classroom in <strong>Brownsville, NY</strong>.
+    That summer, I launched a series of coding and computation workshops to empower local students with the tools to understand and reshape the data around them.
+  </p>
+
+  <p>
+    Each week, we focused on a new theme — from algorithmic thinking to data visualization — connecting code with real-world community questions.
+    Students surveyed local residents about grocery shopping habits, environmental concerns, and neighborhood health resources.
+  </p>
+
+  <p>
+    Using Python, they learned to clean, count, and summarize their results. One exercise asked them to analyze survey data about which grocery stores Brownsville residents visited most often.
+  </p>
+
+  <pre><code class="language-python">
+# Community data workshop — Grocery store analysis
+from collections import Counter
+
+survey_responses = [
+    "Brownsville Market", "GreenMart", "Brownsville Market",
+    "FreshChoice", "GreenMart", "UrbanGrocer", "Brownsville Market"
+]
+
+# Count frequency of each store
+store_counts = Counter(survey_responses)
+
+# Display formatted results
+for store, count in store_counts.items():
+    print(f"{store:20} | {'█' * count} ({count})")
+  </code></pre>
+
+  <p>
+    Watching students transform raw survey data into readable patterns was a turning point.
+    It showed how <strong>code can visualize collective behavior</strong> — and how data literacy can empower a community.
+    This moment marked the true beginning of <strong>PlotLyft</strong>, an idea that would soon evolve into a platform for storytelling through data.
+  </p>
+</div>
